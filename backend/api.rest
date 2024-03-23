@@ -1,0 +1,213 @@
+### Faculty proposing for an event
+POST http://localhost:1234/seminar/ecrProposal/data_management_seminar
+Content-Type: application/json
+
+{
+    
+    "event_title":"Express",
+    "event_organizer":"CSE",
+    "event_sponsor":"CSI & Management",
+    "event_date":"2023-10-20",
+    "event_venue":"Data analytics lab",
+    "guest_name":"Mr. Razak Mohamed",
+    "guest_designation":"Full stack trainer, Zealous",
+    "guest_address":"Salem",
+    "guest_number":8667002959,
+    "guest_email":"razaksrmd@gmail.com",
+    "student_count":64,
+    "faculty_count":3,
+    "others_count":0,
+    "proposal_date":"",
+    "proposal_hod":"",
+    "proposal_principal":"",
+    "event_budget":40000,
+    "event_coordinator":"Victor Prakash",
+  
+    "coordinator_phno":9944085437,
+    "coordinator_designation":406,
+    "acdyr_id":1,
+    "dept_id":1,
+    "sem_id":1
+}
+
+
+####
+
+PUT http://localhost:1234/seminar/ecrCompletion/data_management_seminar/5016
+Content-Type: application/json
+
+{
+    "event_photo_1":"Blockchain1_05-11-2023_20-53-41.png",
+    "event_photo_2":"Blockchain2_05-11-2023_20-53-41.png"
+}
+
+###
+PUT http://localhost:1234/seminar/completionacknowledgelevel2/data_management_seminar/1/6000/5020
+
+
+###
+
+GET http://localhost:1234/seminar/getAcdYrWithSubType/3003
+
+###
+
+POST http://localhost:1234/seminar/ecrProposal/data_management_Seminar
+Content-Type: application/json
+
+{
+    "report_id":"RPT5005",
+    "http://localhost:1234":"seminar",
+    "event_title":"Vue JS",
+    "event_organizer":"CSE",
+    "event_sponsor":"CSI & Management",
+    "event_date":"2023-10-20",
+    "event_venue":"Data analytics lab",
+    "guest_name":"Mr. Razak Mohamed",
+    "guest_designation":"Full stack trainer, Zealous",
+    "guest_address":"Salem",
+    "guest_phone_number":8667002959,
+    "guest_email":"razaksrmd@gmail.com",
+    "student_count":64,
+    "faculty_count":3,
+    "others_count":0,
+    "event_budget":40000,
+    "event_coordinator":"Victor Prakash",
+    "coordinator_emp_id":6007,
+    "coordinator_phone_number":9944085437,
+    "coordinator_designation":406,
+    "event_date_from":"0000-00-00",
+    "event_date_to":"0000-00-00",
+    "acdyr_id":3,
+    "dept_id":4,
+    "sem_id":1
+}
+
+
+
+###
+
+GET http://localhost:1234/seminar/supply/Cloud-2023-09-11-1694405954
+
+###
+
+GET http://localhost:1234/seminar/dept/6004
+
+### HoD is receiving the requested proposal
+GET  
+
+###
+
+### HoD approves the proposal
+PUT http://localhost:1234/seminar/acknowledgelevel1/1/6001/1
+
+###
+
+### Principal is receiving the requested proposal
+GET http://localhost:1234/seminar/loadforlevel2/0/60MEC
+
+###
+
+### Principal approves the proposal
+PUT http://localhost:1234/seminar/acknowledgelevel2/data_management_seminar/0/6000/5003
+
+###
+
+################## Proposal over #####################
+
+###
+
+### Faculty is receiving his/her proposal after approved
+GET http://localhost:1234/ecrWorkshop/loadforCompletion/1
+
+###
+GET http://localhost:1234/ecr/getFacultyParticulars/Noorul
+
+### Faculty is updating the completion report
+PUT  http://localhost:1234/seminar/ecrCompletion/data_management_seminar/RPT5013
+Content-Type: application/json
+
+{
+    "completion_date":"",
+ "event_photo_1":"",
+ "event_photo_2":"",
+ "event_photo_3":"",
+ "event_photo_4":"",
+ "event_photo_5":"",
+ "event_po":"",
+ "event_date_from":"",
+ "event_date_to":"",
+ "event_organizing_secretary":"",
+ "event_time":"",
+ "event_description":"",
+ "event_budget_utilized":"",
+ "pdf":"",
+ "reqMail":"",
+ "accMail":"",
+ "resPerson":"",
+ "particiFeedback":"",
+ "resProfile":"",
+ "ppt":""
+}
+###
+
+### HoD is receiving the completion report
+GET http://localhost:1234/ecrWorkshop/eventcompletionloadlevel1/1/6001
+
+###
+
+### HoD approves the completion report
+PUT http://localhost:1234/ecrWorkshop/completionacknowledgelevel1/1/6001
+
+###
+
+### Principal is receiving the completion report
+GET http://localhost:1234/ecrWorkshop/completionloadlevel2/1
+
+###
+
+### Principal approves the completion report
+PUT http://localhost:1234/ecrWorkshop/completionacknowledgelevel2/1/RPT0000001
+
+
+GET http://localhost:1234/seminar/find
+
+###
+
+POST http://localhost:1234/login
+Content-Type: application/json
+
+{
+    "id":"60CS03",
+    "pass":"vijaycse"
+}
+
+###
+
+POST http://localhost:1234/seminar/dropdownSubTypeWithMajor/2001
+
+###
+
+GET http://localhost:1234/seminar/compare/21CS121
+
+
+
+##################################################
+####################################################
+#####################################################
+#####################################################
+#######################################################
+########################################################
+
+GET http://localhost:1234/load/loadforlevel1/1/6001
+
+###
+
+PUT http://localhost:1234/load/acknowledgelevel1/data_management_seminar/0/6000/5035
+
+###
+
+GET http://localhost:1234/load/loadforlevel2/1/6000
+
+###
+
+PUT http://localhost:1234/load/acknowledgelevel2/data_management_seminar/1/6000/5033
